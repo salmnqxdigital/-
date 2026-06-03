@@ -31,37 +31,47 @@
   </style>
   <style>body { box-sizing: border-box; }</style>
  <script src="/_sdk/telemetry_sdk.js"></script></head>
- <body class="h-full bg-black text-white overflow-auto"><!-- STEP 1: SQUEEZE PAGE -->
+ <body class="h-full bg-black text-white overflow-auto">
+  <!-- STEP 1: SQUEEZE PAGE -->
   <div id="step1" class="h-full flex items-center justify-center p-6">
-   <div class="w-full max-w-md text-center fade-in"><!-- Badge -->
-    <div class="mb-12"><span class="text-xs tracking-[0.3em] uppercase gold font-light">Digital Academy</span>
+   <div class="w-full max-w-md text-center fade-in">
+    <!-- Badge -->
+    <div class="mb-12">
+     <span class="text-xs tracking-[0.3em] uppercase gold font-light">Digital Academy</span>
      <div class="w-12 h-px bg-gold mx-auto mt-4 opacity-50"></div>
     </div><!-- Headline -->
     <h1 class="text-2xl md:text-3xl font-bold leading-relaxed mb-6">الدخول لهاد السيستم <span class="gold">ممنوع</span> على العموم.</h1>
     <p class="text-sm text-gray-400 leading-loose mb-12">قبل ما تشوف أي حاجة، خاصنا نعرفو شكون نتا.<br>
-     هادي ماشي صفحة عادية. هادا فلتر.</p><!-- Form -->
+      هادي ماشي صفحة عادية. هادا فلتر.</p><!-- Form -->
     <form id="squeezeForm" class="space-y-5 text-right">
-     <div><input type="text" id="firstName" required placeholder="الإسم الشخصي" class="w-full bg-transparent border border-gray-700 rounded-none px-5 py-4 text-white text-sm focus:border-gold focus:outline-none transition-colors">
+     <div>
+      <input type="text" id="firstName" required placeholder="الإسم الشخصي" class="w-full bg-transparent border border-gray-700 rounded-none px-5 py-4 text-white text-sm focus:border-gold focus:outline-none transition-colors">
      </div>
-     <div><input type="text" id="lastName" required placeholder="الإسم العائلي" class="w-full bg-transparent border border-gray-700 rounded-none px-5 py-4 text-white text-sm focus:border-gold focus:outline-none transition-colors">
+     <div>
+      <input type="text" id="lastName" required placeholder="الإسم العائلي" class="w-full bg-transparent border border-gray-700 rounded-none px-5 py-4 text-white text-sm focus:border-gold focus:outline-none transition-colors">
      </div>
-     <div><input type="email" id="email" required placeholder="البريد الإلكتروني (Gmail)" class="w-full bg-transparent border border-gray-700 rounded-none px-5 py-4 text-white text-sm focus:border-gold focus:outline-none transition-colors">
+     <div>
+      <input type="email" id="email" required placeholder="البريد الإلكتروني (Gmail)" class="w-full bg-transparent border border-gray-700 rounded-none px-5 py-4 text-white text-sm focus:border-gold focus:outline-none transition-colors">
      </div><button type="submit" id="submitBtn" class="btn-gold w-full py-4 text-base mt-8 rounded-sm"> [ طلب انضمام والعبور للسيستم ] </button>
      <p id="formError" class="text-red-400 text-xs mt-3 hidden"></p>
      <p id="formLoading" class="text-gray-500 text-xs mt-3 hidden">جاري المعالجة...</p>
     </form>
    </div>
   </div><!-- STEP 2: MAIN SALES PAGE -->
-  <div id="step2" class="hidden"><!-- HERO -->
+  <div id="step2" class="hidden">
+   <!-- HERO -->
    <section class="px-6 py-20 md:py-32">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20"><!-- Text -->
-     <div class="flex-1 text-center md:text-right order-1"><span class="text-xs tracking-[0.3em] uppercase gold font-light">Digital Academy</span>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
+     <!-- Text -->
+     <div class="flex-1 text-center md:text-right order-1">
+      <span class="text-xs tracking-[0.3em] uppercase gold font-light">Digital Academy</span>
       <h1 id="heroHeadline" class="text-3xl md:text-5xl font-black leading-[1.6] mt-8 mb-8">99% كيبيعو بحال <span class="gold">خدامين مطيعين</span>.<br>
         هاد الـ Playbook مديور غي للـ 1% اللي باغيين يولّيو <span class="gold">أسياد السوق</span>.</h1>
       <p class="text-gray-400 text-base leading-loose mb-10 max-w-lg md:mr-0 mx-auto">ماشي كتاب. ماشي كورس. هادا سيستم كامل باش تبني بريستيج حقيقي وتخلّي الكليان هوما اللي يجيو عندك.</p><a href="https://diigitalacademy.gumroad.com/l/cenbzb" target="_blank" rel="noopener noreferrer" class="btn-gold inline-block px-10 py-5 text-lg rounded-sm"> <span id="ctaText">[ امتلك سلطة البريستيج الآن ]</span> </a>
       <p class="gold text-xs mt-4 opacity-80">هذا الفلتر مديور غي للي باغي يطير من الـ Matrix د البيع الرخيص</p>
      </div><!-- Image -->
-     <div class="flex-1 order-2 flex justify-center"><img src="https://i.pinimg.com/736x/01/5c/bb/015cbbd8120871f61e028a27bf1658b3.jpg" alt="هندسة البريستيج - Playbook" loading="lazy" class="w-72 md:w-96 glow-gold rounded-sm" onerror="console.error('Image failed:', this.src); this.style.background='#1a1a1a'; this.alt='Image unavailable';">
+     <div class="flex-1 order-2 flex justify-center">
+      <img src="https://i.pinimg.com/736x/01/5c/bb/015cbbd8120871f61e028a27bf1658b3.jpg" alt="هندسة البريستيج - Playbook" loading="lazy" class="w-72 md:w-96 glow-gold rounded-sm" onerror="console.error('Image failed:', this.src); this.style.background='#1a1a1a'; this.alt='Image unavailable';">
      </div>
     </div>
    </section><!-- PAIN GRID -->
@@ -69,16 +79,20 @@
     <div class="max-w-6xl mx-auto">
      <h2 class="text-center text-2xl md:text-3xl font-bold mb-4">الصحوة الباردة</h2>
      <p class="text-center text-gray-500 text-sm mb-16">3 أخطاء قاتلة كتخلّيك عبد فالسوق</p>
-     <div class="grid grid-cols-1 md:grid-cols-3 gap-8"><!-- Card 1 -->
-      <div class="border border-gray-800 p-10 hover:border-gold transition-colors"><span class="gold text-3xl font-black">01</span>
+     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card 1 -->
+      <div class="border border-gray-800 p-10 hover:border-gold transition-colors">
+       <span class="gold text-3xl font-black">01</span>
        <h3 class="text-lg font-bold mt-6 mb-4">الجري مور الكليان فالـ DMs</h3>
        <p class="text-gray-400 text-sm leading-loose">كتبعت messages، كتسوّل attention، كتحسّ براسك رخيص. هادشي ماشي بيع، هادا تسوّل إلكتروني.</p>
       </div><!-- Card 2 -->
-      <div class="border border-gray-800 p-10 hover:border-gold transition-colors"><span class="gold text-3xl font-black">02</span>
+      <div class="border border-gray-800 p-10 hover:border-gold transition-colors">
+       <span class="gold text-3xl font-black">02</span>
        <h3 class="text-lg font-bold mt-6 mb-4">Promotions و Discounts بحال السوق الشعبي</h3>
        <p class="text-gray-400 text-sm leading-loose">كل مرة كتنزّل الثمن، كتنزّل قيمتك. الكليان كيشوفوك رخيص ماشي حيت ماعندكش قيمة، حيت نتا اللي قلتيها ليهم.</p>
       </div><!-- Card 3 -->
-      <div class="border border-gray-800 p-10 hover:border-gold transition-colors"><span class="gold text-3xl font-black">03</span>
+      <div class="border border-gray-800 p-10 hover:border-gold transition-colors">
+       <span class="gold text-3xl font-black">03</span>
        <h3 class="text-lg font-bold mt-6 mb-4">Disponible 24/7 بحال خادم</h3>
        <p class="text-gray-400 text-sm leading-loose">كتجاوب فالليل، فالعطلة، فأي وقت. ماعمرك حطّيتي حدود. الكليان كيتعاملو معاك بحال موظف عندهم.</p>
       </div>
@@ -90,19 +104,22 @@
      <h2 class="text-center text-2xl md:text-3xl font-bold mb-4">داخل الـ Playbook</h2>
      <p class="text-center text-gray-500 text-sm mb-16">اللي غادي تكتاشف:</p>
      <div class="space-y-10">
-      <div class="flex gap-5 items-start"><span class="gold text-xl mt-1">◆</span>
+      <div class="flex gap-5 items-start">
+       <span class="gold text-xl mt-1">◆</span>
        <div>
         <h4 class="font-bold text-lg mb-2">بروتوكول تفكيك وهم القيمة المجانية</h4>
         <p class="text-gray-400 text-sm leading-loose">كيفاش تخلّي الناس يحسّو بأن اللي عندك ماكاينش بلاصة خرى، وأن الوصول ليه privilege ماشي حق.</p>
        </div>
       </div>
-      <div class="flex gap-5 items-start"><span class="gold text-xl mt-1">◆</span>
+      <div class="flex gap-5 items-start">
+       <span class="gold text-xl mt-1">◆</span>
        <div>
         <h4 class="font-bold text-lg mb-2">هندسة العروض النظيفة</h4>
         <p class="text-gray-400 text-sm leading-loose">كيفاش تبني عرض يبان premium من أول ثانية بلا ما تحتاج تشرح، تبرّر، ولا تقنع حد.</p>
        </div>
       </div>
-      <div class="flex gap-5 items-start"><span class="gold text-xl mt-1">◆</span>
+      <div class="flex gap-5 items-start">
+       <span class="gold text-xl mt-1">◆</span>
        <div>
         <h4 class="font-bold text-lg mb-2">بروتوكول تصفية ونفي الكليان القجّام</h4>
         <p class="text-gray-400 text-sm leading-loose">كيفاش تحط فلاتر ذكية باش غي الكليان اللي عندهم budget وعندهم نية حقيقية هوما اللي يوصلو ليك.</p>
@@ -112,13 +129,15 @@
     </div>
    </section><!-- FINAL FILTER / PRICE -->
    <section class="px-6 py-20 md:py-32 border-t border-gray-900">
-    <div class="max-w-2xl mx-auto text-center border border-gold p-12 md:p-16 glow-gold"><span class="text-xs tracking-[0.3em] uppercase gold">الفلتر الأخير</span>
+    <div class="max-w-2xl mx-auto text-center border border-gold p-12 md:p-16 glow-gold">
+     <span class="text-xs tracking-[0.3em] uppercase gold">الفلتر الأخير</span>
      <h2 class="text-2xl md:text-3xl font-bold mt-8 mb-6">هاد الـ Playbook ماشي للجميع.</h2>
      <p class="text-gray-400 text-sm leading-loose mb-10 max-w-md mx-auto">الثمن ماشي obstacle. الثمن هو الفلتر اللي كيحمي هاد المعلومات من العقليات المتوسطة. إلا كنتي كتقلّب على "رخيص"، هنا ماشي بلاصتك.</p><a href="https://diigitalacademy.gumroad.com/l/cenbzb" target="_blank" rel="noopener noreferrer" class="btn-gold inline-block px-12 py-5 text-lg rounded-sm"> [ ادخل دابا قبل ما يتسدّ الباب ] </a>
      <p class="text-gray-600 text-xs mt-6">الأماكن محدودة. ماكاين لا refund لا تفاوض.</p>
     </div>
    </section><!-- Footer -->
-   <footer class="px-6 py-12 border-t border-gray-900 text-center"><span class="text-gray-600 text-xs">© Digital Academy — هندسة البريستيج</span>
+   <footer class="px-6 py-12 border-t border-gray-900 text-center">
+    <span class="text-gray-600 text-xs">© Digital Academy — هندسة البريستيج</span>
    </footer>
   </div>
   <script>
@@ -171,8 +190,15 @@
   });
 
   // Form handling
+  let isSubmitting = false;
+  
   document.getElementById('squeezeForm').addEventListener('submit', async (e) => {
     e.preventDefault();
+    
+    // Prevent double submission
+    if (isSubmitting) return;
+    isSubmitting = true;
+    
     const btn = document.getElementById('submitBtn');
     const err = document.getElementById('formError');
     const loading = document.getElementById('formLoading');
@@ -184,6 +210,7 @@
     if (!firstName || !lastName || !email) {
       err.textContent = 'المرجو ملء جميع الخانات';
       err.classList.remove('hidden');
+      isSubmitting = false;
       return;
     }
 
@@ -192,28 +219,46 @@
     btn.disabled = true;
     btn.style.opacity = '0.5';
 
-    const result = await window.dataSdk.create({
-      first_name: firstName,
-      last_name: lastName,
-      email: email,
-      submitted_at: new Date().toISOString()
-    });
+    try {
+      const result = await window.dataSdk.create({
+        first_name: firstName,
+        last_name: lastName,
+        email: email,
+        submitted_at: new Date().toISOString()
+      });
 
-    if (result.isOk) {
-      document.getElementById('step1').classList.add('hidden');
-      document.getElementById('step2').classList.remove('hidden');
-      window.scrollTo(0, 0);
-    } else {
+      if (result.isOk) {
+        // Immediate transition to step 2
+        setTimeout(() => {
+          const step1 = document.getElementById('step1');
+          const step2 = document.getElementById('step2');
+          
+          if (step1) step1.style.display = 'none';
+          if (step2) step2.style.display = 'block';
+          
+          window.scrollTo(0, 0);
+          isSubmitting = false;
+        }, 100);
+      } else {
+        err.textContent = 'حدث خطأ. حاول مرة أخرى.';
+        err.classList.remove('hidden');
+        loading.classList.add('hidden');
+        btn.disabled = false;
+        btn.style.opacity = '1';
+        isSubmitting = false;
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
       err.textContent = 'حدث خطأ. حاول مرة أخرى.';
       err.classList.remove('hidden');
+      loading.classList.add('hidden');
+      btn.disabled = false;
+      btn.style.opacity = '1';
+      isSubmitting = false;
     }
-
-    loading.classList.add('hidden');
-    btn.disabled = false;
-    btn.style.opacity = '1';
   });
 
   lucide.createIcons();
 </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a05b0d6f9b64e1bc',t:'MTc4MDQ1MTQ4NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a05b49fd3acaffff',t:'MTc4MDQ1Mzk2NA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
